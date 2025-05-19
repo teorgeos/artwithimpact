@@ -1,9 +1,8 @@
-// backend/models/Sentence.js
 const mongoose = require('mongoose');
 
 const SentenceSchema = new mongoose.Schema({
-  text: String,
-  status: { type: String, enum: ['original', 'modified', 'new'], default: 'original' },
+  text: { type: String, required: true },
+  status: { type: String, enum: ['original', 'modified', 'distorted'], default: 'original' },
   timestamp: { type: Date, default: Date.now }
 });
 

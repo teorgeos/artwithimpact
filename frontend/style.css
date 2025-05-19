@@ -12,29 +12,31 @@ body {
   }
   
   #sentence-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    line-height: 2;
+    font-size: 18px;
   }
   
+  /* 문장들이 한 줄로 이어지도록 inline으로 */
   .sentence {
-    padding: 12px 16px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    display: inline;
+    margin-right: 6px;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.3s ease;
   }
   
+  /* 포커스 시만 표시되는 테두리 */
   .sentence:focus {
-    outline: 2px dashed #666;
-    background-color: #f0f0f0;
+    outline: 1px dashed #888;
   }
   
+  /* 왜곡 효과 */
   .sentence.distorting {
     color: red;
     font-weight: bold;
   }
+  
   
   #action-box {
     margin-top: 20px;
