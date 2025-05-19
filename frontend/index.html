@@ -2,13 +2,21 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>웹 신문</title>
+  <title>뉴스</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>실시간 문장 편집</h1>
+  <h1>신문</h1>
+
+  <!-- 문장 출력 영역 -->
   <div id="sentence-container"></div>
-  <button id="save-btn">수정한 문장 저장</button>
+
+  <!-- 수정 액션 버튼 -->
+  <div id="action-box" style="display: none;">
+    <button id="action-btn" disabled>수정하기</button>
+  </div>
+
+  <!-- 자바스크립트 연결 -->
   <script src="app.js"></script>
 </body>
 </html>
