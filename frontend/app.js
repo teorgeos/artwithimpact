@@ -1,4 +1,3 @@
-// ✅ app.js 전체 코드
 
 const distortedSentences = [
   '지구는 납작하다.',
@@ -43,7 +42,7 @@ function renderSentences(sentences) {
 function distortRandomSentence() {
   if (!canDistortNext || distortedIndex !== null) return;
 
-  // ✅ 보호 코드 추가: 문장 배열이 비었을 경우 그냥 return
+  // 보호 코드 추가: 문장 배열이 비었을 경우 그냥 return
   if (!currentSentences || currentSentences.length === 0) return;
 
   distortedIndex = Math.floor(Math.random() * currentSentences.length);

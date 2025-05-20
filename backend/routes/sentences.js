@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Sentence = require('../models/Sentence');
 
-// ✅ [GET] 모든 문장 가져오기 (최대 13개, 오래된 순)
+// [GET] 모든 문장 가져오기 (최대 13개, 오래된 순)
 router.get('/', async (req, res) => {
   try {
     const sentences = await Sentence.find().sort({ timestamp: 1 }).limit(13);
@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// ✅ [POST] 기존 문장 수정 or 새 문장 추가
+// [POST] 기존 문장 수정 or 새 문장 추가
 router.post('/', async (req, res) => {
   const { id, text, status } = req.body;
 

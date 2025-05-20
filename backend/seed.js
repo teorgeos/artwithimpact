@@ -14,10 +14,10 @@ async function seed() {
     await mongoose.connect(process.env.MONGO_URI);
     await Sentence.deleteMany();
     await Sentence.insertMany(seedSentences.map(text => ({ text, status: 'original' })));
-    console.log('✅ 초기 문장 삽입 완료');
+    console.log('초기 문장 삽입 완료');
     process.exit();
   } catch (err) {
-    console.error('❌ 에러:', err);
+    console.error('에러:', err);
     process.exit(1);
   }
 }
