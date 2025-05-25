@@ -7,18 +7,18 @@ header {
 
 .divider {
   height: 1px;
-  background-color: #333;
-  margin: 10px 0 20px 0;
+  background-color: #1A110C;
+  margin: 0px 0 0px 0;
 }
 
 
 .title {
-  background-color: #2e1d16; /* 어두운 갈색/검정색 배경 */
+  background-color: #1A110C; /* 어두운 갈색/검정색 배경 */
   color: white;              /* 흰색 글자 */
   text-align: center;        /* 가운데 정렬 */
   font-size: 3em;            /* 제목 크기 */
   padding: 0px 0px;           /* 위아래 여백 */
-  margin: 40px 0px 20px;       /* 바깥 여백 */
+  margin: 10px 0px;       /* 바깥 여백 */
   /* font-family: 'Noto Serif KR', serif; */
   letter-spacing: 2px;       /* 자간 */
 }
@@ -104,3 +104,7 @@ body {
     cursor: not-allowed;
   }
   
+  
+  footer{
+      text-align: center;
+  }
