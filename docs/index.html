@@ -2,16 +2,33 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>공론지 公論紙</title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Song+Myung&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
-  <h1>공론지 公論紙</h1>
+  <header>
+    <div class = "header-left">西江大學校</div>
+    <div class = "header-center">아트 위드 임팩트</div>
+   <div class="header-right" id="current-date"></div>
+  </header>
+  <div class="divider"></div>
+
+  <h1 class = "title">공론지 公論紙</h1>
+
+  <section class = "image-section">
+    <img src="exampleimage.png" alt="Newspaper Image"/>
+  </section>
+
+  <section class="slogan">“실시간으로 바뀌는 왜곡된 문장을 고쳐주세요”</section>
+  
+
+
 <!-- 한 문단 안에 문장들 들어감 -->
 <p id="sentence-container"></p>
 

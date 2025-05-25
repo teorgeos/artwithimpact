@@ -112,3 +112,17 @@ window.addEventListener('DOMContentLoaded', async () => {
     console.error('문장 불러오기 실패:', err);
   }
 });
+
+// 오늘 날짜를 가져와서 'YYYY年MM月DD日' 형식으로 출력
+function setCurrentDate() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  
+  const formattedDate = `${year}年${month}月${day}日`;
+  document.getElementById('current-date').textContent = formattedDate;
+}
+
+// 페이지 로드 시 실행
+window.onload = setCurrentDate;

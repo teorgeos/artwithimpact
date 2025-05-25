@@ -1,3 +1,51 @@
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+.divider {
+  height: 1px;
+  background-color: #333;
+  margin: 10px 0 20px 0;
+}
+
+
+.title {
+  background-color: #2e1d16; /* 어두운 갈색/검정색 배경 */
+  color: white;              /* 흰색 글자 */
+  text-align: center;        /* 가운데 정렬 */
+  font-size: 3em;            /* 제목 크기 */
+  padding: 0px 0px;           /* 위아래 여백 */
+  margin: 40px 0px 20px;       /* 바깥 여백 */
+  /* font-family: 'Noto Serif KR', serif; */
+  letter-spacing: 2px;       /* 자간 */
+}
+
+
+.image-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;  /* 가운데 정렬 */
+  padding: 0 0px;
+  box-sizing: border-box;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;       /* 비율 유지 */
+  display: block;
+}
+
+
+.slogan {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+
 body {
     font-family: "Song Myung", serif;
     padding: 30px;
@@ -5,14 +53,9 @@ body {
     color: #1A110C;
     line-height: 1.6;
   }
-  
-  h1 {
-    margin-bottom: 20px;
-    font-size: 50px;
-   text-align: center;
 
-  }
   
+ 
   #sentence-container {
     line-height: 2;
     font-size: 18px;
