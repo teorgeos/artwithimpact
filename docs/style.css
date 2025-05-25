@@ -13,7 +13,7 @@ header {
 
 
 .title {
-  background-color: #1A110C; /* 어두운 갈색/검정색 배경 */
+  background-color: #1A110C; 
   color: white;              /* 흰색 글자 */
   text-align: center;        /* 가운데 정렬 */
   font-size: 3em;            /* 제목 크기 */
@@ -41,14 +41,16 @@ header {
 
 .slogan {
   text-align: center;
+  font-size: 20px;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
 
 
 body {
-    font-family: "Song Myung", serif;
+    font-family: "Gothic A1", sans-serif;
     padding: 30px;
+    font-size: 17px;
     background-color: #E5E6E8;
     color: #1A110C;
     line-height: 1.6;
@@ -57,8 +59,9 @@ body {
   
  
   #sentence-container {
-    line-height: 2;
-    font-size: 18px;
+    line-height: 1.7;
+    font-size: 15px;
+    text-align: justify;
   }
   
   /* 문장들이 한 줄로 이어지도록 inline으로 */
@@ -107,4 +110,5 @@ body {
   
   footer{
       text-align: center;
+      font-size: 14px;
   }
