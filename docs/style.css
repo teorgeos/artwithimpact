@@ -5,6 +5,23 @@ header {
   font-size: 0.9em;
 }
 
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999; /* 모든 요소 위 */
+  pointer-events: none; /* 이걸 켜야 아래 클릭 가능 */
+}
+
+.fullscreen-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* 화면에 꽉 채우되 비율 맞춤 */
+}
+
+
 .divider {
   height: 1px;
   background-color: #1A110C;
